@@ -1,0 +1,54 @@
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.5;
+  font-weight: 500;
+}
+
+#loginform {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#loginform input {
+  border: none;
+  font-size: 18px;
+  padding: 15px 0px;
+
+  margin-bottom: 25px;
+}
+#loginform input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+
+#loginform input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#loginform input:focus {
+  border-color: var(--yellow);
+}
+
+#loginform input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  border-radius: 5px;
+}
+#loginform a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+}
